@@ -18,6 +18,9 @@
 		45C731CF16DA97CA0001EEC2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C731CE16DA97CA0001EEC2 /* Default-568h@2x.png */; };
 		45C731D216DA97CA0001EEC2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C731D016DA97CA0001EEC2 /* MainStoryboard.storyboard */; };
 		45C731D516DA97CA0001EEC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C731D416DA97CA0001EEC2 /* ViewController.m */; };
+		45C731E516DA99F30001EEC2 /* ApiAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C731E216DA99F30001EEC2 /* ApiAccess.m */; };
+		45C731E616DA99F30001EEC2 /* Colour.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C731E416DA99F30001EEC2 /* Colour.m */; };
+		E5CB3F40A31741CDB99D3896 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B3DBADB2554065B2E04697 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		45C731D116DA97CA0001EEC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		45C731D316DA97CA0001EEC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		45C731D416DA97CA0001EEC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		45C731E116DA99F30001EEC2 /* ApiAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiAccess.h; sourceTree = "<group>"; };
+		45C731E216DA99F30001EEC2 /* ApiAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiAccess.m; sourceTree = "<group>"; };
+		45C731E316DA99F30001EEC2 /* Colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colour.h; sourceTree = "<group>"; };
+		45C731E416DA99F30001EEC2 /* Colour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colour.m; sourceTree = "<group>"; };
+		89B3DBADB2554065B2E04697 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33E92E22EEF45B6B4925BE1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 				45C731B916DA97CA0001EEC2 /* UIKit.framework in Frameworks */,
 				45C731BB16DA97CA0001EEC2 /* Foundation.framework in Frameworks */,
 				45C731BD16DA97CA0001EEC2 /* CoreGraphics.framework in Frameworks */,
+				E5CB3F40A31741CDB99D3896 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,7 @@
 				45C731BE16DA97CA0001EEC2 /* RK020Test */,
 				45C731B716DA97CA0001EEC2 /* Frameworks */,
 				45C731B616DA97CA0001EEC2 /* Products */,
+				A33E92E22EEF45B6B4925BE1 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +87,7 @@
 				45C731B816DA97CA0001EEC2 /* UIKit.framework */,
 				45C731BA16DA97CA0001EEC2 /* Foundation.framework */,
 				45C731BC16DA97CA0001EEC2 /* CoreGraphics.framework */,
+				89B3DBADB2554065B2E04697 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +95,10 @@
 		45C731BE16DA97CA0001EEC2 /* RK020Test */ = {
 			isa = PBXGroup;
 			children = (
+				45C731E116DA99F30001EEC2 /* ApiAccess.h */,
+				45C731E216DA99F30001EEC2 /* ApiAccess.m */,
+				45C731E316DA99F30001EEC2 /* Colour.h */,
+				45C731E416DA99F30001EEC2 /* Colour.m */,
 				45C731C716DA97CA0001EEC2 /* AppDelegate.h */,
 				45C731C816DA97CA0001EEC2 /* AppDelegate.m */,
 				45C731D016DA97CA0001EEC2 /* MainStoryboard.storyboard */,
@@ -117,6 +133,7 @@
 				45C731B116DA97CA0001EEC2 /* Sources */,
 				45C731B216DA97CA0001EEC2 /* Frameworks */,
 				45C731B316DA97CA0001EEC2 /* Resources */,
+				9756516CAF5D4136AF8A6E38 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +185,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9756516CAF5D4136AF8A6E38 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		45C731B116DA97CA0001EEC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -176,6 +210,8 @@
 				45C731C516DA97CA0001EEC2 /* main.m in Sources */,
 				45C731C916DA97CA0001EEC2 /* AppDelegate.m in Sources */,
 				45C731D516DA97CA0001EEC2 /* ViewController.m in Sources */,
+				45C731E516DA99F30001EEC2 /* ApiAccess.m in Sources */,
+				45C731E616DA99F30001EEC2 /* Colour.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +295,7 @@
 		};
 		45C731D916DA97CA0001EEC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33E92E22EEF45B6B4925BE1 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RK020Test/RK020Test-Prefix.pch";
@@ -270,6 +307,7 @@
 		};
 		45C731DA16DA97CA0001EEC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33E92E22EEF45B6B4925BE1 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RK020Test/RK020Test-Prefix.pch";
@@ -298,6 +336,7 @@
 				45C731DA16DA97CA0001EEC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
